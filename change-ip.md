@@ -25,12 +25,12 @@ Trong đó:
 
 Ví dụ:
 ```
-neutron port-create 9e53cf39-8af3-4eb2-ae2d-f08926df41b2 --fixed-ip ip_address=10.3.11.90
+neutron port-create 7a115aa3-c96c-4e16-8105-b3e83ce01b5c --fixed-ip ip_address=10.10.11.38
 ```
 
 Bước 6: Sử dụng câu lệnh sau để lấy danh sách các port, kết hợp với grep ip để filter
 ```
-neutron port-list | grep 10.3.11.90
+neutron port-list | grep 10.10.11.38
 ```
 Bước 7: Sử dụng câu lệnh sau để lấy danh sách các máy ảo
 ```
@@ -53,7 +53,7 @@ nova interface-detach <vm-id> <port-id>
 ```
 Trong đó:
 -	<vm-id>: ID của máy ảo
--	<port-id>: ID của port
+-	<port-id>: ID của port cũ
 - Ví dụ: 
 ```
 nova interface-detach cf1084be-65ae-49b9-8646-96cf8cf58d6c bcd62bf5-85ad-4885-a8d3-8497bb7a93e3
